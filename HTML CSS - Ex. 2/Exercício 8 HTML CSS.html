@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 8 HTML/CSS</title>
+    <Style>
+
+        header {
+            background-color: deepskyblue;
+            color: black;
+            text-align: center;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: rgb(29, 28, 28);
+            color: gold;
+            font-size: 2rem;
+            list-style-type: none;
+        }
+
+        main {
+            background-color: rgba(158, 22, 49, 0.2);
+            color: black;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .artigo1 {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-left: solid red 5px;
+            padding: 20px;
+            margin: 15px;
+            width: 50%;
+            height: 200px;
+        }
+
+        .artigo2 {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-left: solid blue 5px;
+            padding: 20px;
+            margin: 15px;
+            width: 50%;
+            height: 200px;
+        }
+
+        .artigo3 {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-left: solid green 5px;
+            padding: 20px;
+            margin: 15px;
+            width: 50%;
+            height: 200px;
+        }
+
+        #aside {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-left: solid hotpink 5px;
+            padding: 20px;
+            margin: 15px;
+            width: 50%;
+            height: 200px;
+        }
+
+    </Style>
+</head>
+<body>
+    <header>
+
+        <h1>Tag Semântica Header</h1>
+        <h1>CSS - Seletores CSS</h1>
+        <p>Esta tag, é uma tag semântica que é utilizada para definir o cabeçalho de uma página html</p>
+
+    </header>
+    <nav>
+
+        <p>O elemento (tag) semântico &lt;nav&gt; é usado para definir uma seção de navegação. Ele é um dos principais pilares da web semântica uma vez que é destinado a navegação. Abaixo exemplificamos com um menu. </p>
+        <ul>
+            <li><a href="http://">Menu 1</a></li>
+            <li><a href="http://">Menu 2</a></li>
+            <li><a href="http://">Menu 3</a></li>
+            <li><a href="http://">Menu 4</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        
+        <h2>Tag &lt;main&gt;</h2>
+        <p>O elemento Main deve ser usado uma vez por página e deve envolver o conteúdo principal exclusivo da página</p>
+
+        <section>
+
+            <h2>Web Semantica</h2>
+
+            <p>A web semântica é uma abordagem que utiliza elementos html com significado claro para estruturar conteúdo na web. São exemplos de tags semânticas <strong>&lt;header&gt;</strong>, <strong>&lt;nav&gt;</strong>, <strong>&lt;main&gt;</strong>, <strong>&lt;section&gt;</strong>, <strong>&lt;article&gt;</strong>, <strong>&lt;asside&gt;</strong> e o <strong>&lt;footer&gt;</strong>.</p>
+
+            <p>Eu posso ter em um documento HTML várias seções.</p>
+
+            <h2>Elemento semântico div</h2>
+
+            <p>A tag html div é um elemento semântico com valor neutro. Ele é muito utilizado para organizar conteúdo e possui valor semântico neutro ou nulo</p>
+
+            <h2>Seletores CSS</h2>
+
+            <p>Os seletores css, são padrões usados para selecionar e estilizar elementos html. Junto com as propriedades e valores eles formam as regras css.</p>
+
+            <article class="artigo1">
+                <h1>Seletor de Tipo</h1>
+                <p>Os seletores de tipo, são aqueles que representam as tags html, por exemplo: h1 {propriedade:valor};</p>
+            </article>
+
+            <article class="artigo2">
+                <h3>Seletor de Id</h3>
+                <p>O seletor de Id é aquele que utiliza o atributo html id. Esse seletor é personalíssimo uma vez que em tese o elemento html só um id que pode se repetir. O seletor de Id deve começar com o #nomeSeletor{propriedades:valor};</p>
+            </article>
+
+            <article class="artigo3">
+                <h3>Seletor de Classe</h3>
+                <p>O seletor de Classe é aquele que é aplicado para estilizar um ou mais elementos html que possuam o mesmo atributo class. Esse seletor começa com um ponto seguido do nome do seletor. Por exemplo .nomeSeletor{propriedade:valor};</p>
+            </article>
+
+        </section>
+        <aside id="aside">
+
+            <h2>Tag semantica Aside</h2>
+
+            <p>A tag semantica aside é aquela usada para representar conteúdo que está relacionado com o conteúdo principal, ou seja, é um conteúdo auxiliar. É um conteúdo extra. Geralmente é usado também como menu auxiliar,</p>
+
+            <ul>
+                <li><a href="http://">Submenu 1</a></li>
+                <li><a href="http://">Submenu 2</a></li>
+                <li><a href="http://">Submenu 3</a></li>
+                <li><a href="http://">Submenu 4</a></li>
+
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <h2>Elemento semântico Footer</h2>
+
+        <p>O elemento footer é o elemento semântico que finaliza o documento. Nele, Ggeralmente teremos as informações finais do documento. Por exemplo:</p>
+        <h3>Nome: Iago Batista Gomes deCarvalho</h3>
+        <h3>Data de criação: 10/03/2025</h3>
+        <h4>Exemplo 8</h4>
+
+    </footer>
+</body>
+</html>
